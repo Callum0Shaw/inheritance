@@ -29,11 +29,4 @@ class IntBuilder {
     return this.int
   }
 }
-console.log(IntBuilder.random(10, 100));
-
-let intBuilder = new IntBuilder(10);
-
-intBuilder.plus(2, 3, 2).minus(1, 2).multiply(2).divide(4).mod(3)                       
-
-console.log(intBuilder.get());
 
