@@ -47,5 +47,5 @@ class IntBuilder extends Es6BaseClass {
     return this
   }
 }
-
+                                 // 'e';
 
