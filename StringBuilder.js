@@ -1,9 +1,16 @@
-function StringBuilder(str = '') {
-  this.str = str
+function Es5BaseClass(value) {
+  this.value = value
 
-  this.get = function() {
-    return this.str
+  this.test = function () {
+    console.log("Testing parent");
   }
+  this.get = function () {
+    return this.value
+  }
+}
+
+function StringBuilder(value) {
+  Es5BaseClass.call(this, value)
 
   this.plus = function(...strings) {
     let newString = this.str
@@ -29,15 +36,18 @@ function StringBuilder(str = '') {
     this.str = this.str.slice(0, Math.floor(this.str.length / n))
     return this
   }
+
   this.remove = function(subStr) {
     this.str = this.str.split(subStr).join('');
     return this;
   }
+  
   this.sub = function (from, n) {
     this.str = this.str.slice(from, from + n)
     return this
   }
 }
+
 
 
 
