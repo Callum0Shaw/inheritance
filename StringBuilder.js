@@ -47,19 +47,7 @@ function StringBuilder(value) {
     return this
   }
 }
-let strBuilder = new StringBuilder('Hello'); // 'Hello';
-strBuilder.plus(' all', '!')                         // 'Hello all!'
-console.log(strBuilder.get()); 
-  strBuilder.minus(4)                                  // 'Hello '
-  console.log(strBuilder.get()); 
-  strBuilder.multiply(3)                               // 'Hello Hello Hello '
-  console.log(strBuilder.get()); 
-  strBuilder.divide(4)                                 // 'Hell';
-  console.log(strBuilder.get()); 
-  strBuilder.remove('l')                               // 'He';
-  console.log(strBuilder.get()); 
-  strBuilder .sub(1,1)                                  // 'e';
-console.log(strBuilder.get()); 
+
 
 
 
